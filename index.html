@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Yewon Jeon</title>
   <link rel="stylesheet" href="style.css">
   <style>
@@ -12,37 +11,74 @@
       margin: 0;
       padding: 0;
     }
+
     header, main {
       padding: 20px;
     }
+
     h1, h2 {
       margin: 0;
     }
+
     hr {
-      margin: 10px 0;
+      margin: 20px 0;
     }
 
     article {
       width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
       box-sizing: border-box;
+      padding: 0 20px;
     }
 
     section {
-      margin-bottom: 30px; /* 섹션 간 간격 */
+      margin-bottom: 30px;
+    }
+
+    /* Header styling for desktop */
+    #header {
+      display: flex;
+      align-items: center;
+      gap: 90px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    #header img {
+      width: 150px;
+      border-radius: 10px;
+      flex-shrink: 0;
+      margin-left: 40px;
+    }
+
+    #header div {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    /* Responsive layout for smaller screens */
+    @media (max-width: 600px) {
+      #header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #header img {
+        margin-bottom: 15px;
+      }
+
+      #header div {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
 
-<!-- <header id="header">
-  <h1>Yewon Jeon</h1>
- <img src="IMG_4511.jpg" alt="Profile Photo" style="width:150px; border-radius: 10px; margin-top: 10px;">
-  <hr>
-  SKKU Mechanical Engineering
-  <hr>
-</header> -->
-
-<header id="header" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+<header id="header">
+  <img src="IMG_4511.jpg" alt="Profile Photo">
   <div>
     <h1>Yewon Jeon</h1>
     <p>B.S. in Mechanical Engineering @ Sungkyunkwan University (Suwon)</p>
@@ -55,8 +91,6 @@
       Location: Sungkyunkwan University (Suwon), Republic of Korea
     </div>
   </div>
-
-  <img src="IMG_4511.jpg" alt="Profile Photo" style="width:150px; border-radius:10px; margin-left: 20px;">
 </header>
 
 <main>
@@ -104,7 +138,7 @@
       - [23.03.01 - 23.11.30] 드론 시뮬레이션 환경 구축(Unreal Engine)을 통한 드론 레이싱 개발 @<a href="https://rise.skku.edu/" target="_blank">RISE LAB, SKKU</a>, 이화여자대학교 시뮬레이션 융복합 콘텐츠 연구센터<br>
       - [23.06.01 - 23.10.14] 다양한 로봇의 자율주행을 위한 실내 정밀 지도 생성 및 데이터 공유 기술 @<a href="https://clabil.com/" target="_blank">CLABiL</a>, 산학협력프로젝트<br>
       - [23.08.24 - 23.10.24] <a href="https://www.morai.ai/ko/svadc/" target="_blank">서울 버추얼 자율주행 챌린지</a><br>
-      - [23.12.18 - 24.01.24] RL 기반 Q-learning을 활용한 자율자동차의 Path Planning <br>
+      - [23.12.18 - 24.01.24] RL 기반 Q-learning을 활용한 자율자동차의 Path Planning (Advisor : Eunbyung Park) <br>
       - [23.06.01 - 24.11.10] 대학생 창작 모빌리티 경진대회 무인 모빌리티 부문<br>
             <div style="margin-left: 40px;">
                 • Team member in 2023<br>
@@ -117,9 +151,9 @@
 
     <section>
       <h2>Awards</h2>
-            [23.08.25 - 23.08.25] 제6회 국민대학교 자율주행 경진대회 3등 입상<br>
-            [23.10.14 - 23.10.14] 2023 창의혁신 DNA 산학협력 팀 프로젝트 최종 발표회 공학혁신상 수상<br>
-            [23.11.24 - 23.11.24] 샤크(SHARK) 자율주행 대회 우수상 수상<br>
+      - [23.08.25 - 23.08.25] 제6회 국민대학교 자율주행 경진대회 3등 입상<br>
+      - [23.10.14 - 23.10.14] 2023 창의혁신 DNA 산학협력 팀 프로젝트 최종 발표회 공학혁신상 수상<br>
+      - [23.11.24 - 23.11.24] 샤크(SHARK) 자율주행 대회 우수상 수상<br>
     </section>
 
     <section>
