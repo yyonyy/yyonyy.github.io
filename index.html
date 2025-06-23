@@ -5,169 +5,277 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yewon Jeon</title>
   <link rel="icon" href="icon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Mulish:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
     }
 
-    header, main {
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
       padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      position: relative;
     }
 
-    h1, h2 {
-      margin: 0;
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      position: relative;
     }
 
-    hr {
-      margin: 20px 0;
-    }
-
-    article {
+    .profile-pic {
       width: 100%;
-      max-width: 1150px;
-      margin: 0 auto;
-      box-sizing: border-box;
-      padding: 0 20px;
+      height: 100%;
+      margin-bottom: 0;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    section {
+.profile-pic-outer {
+  width: 150px;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    h1 {
+      font-size: 36px;
+      margin: 10px auto;
+      color: #333;
+    }
+
+    p.subtitle {
+      font-family: 'Mulish', sans-serif;
+      font-size: 18px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .header-icons {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .header-icons a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #bfa8ff;
+      color: #fff;
+      margin-left: 10px;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .header-icons a:hover {
+      background-color: #a890ff;
+    }
+
+    .content {
+      width: 100%;
+    }
+
+    .section {
       margin-bottom: 30px;
     }
 
-    /* Header styling for desktop */
-    #header {
-      display: flex;
-      align-items: center;
-      gap: 90px;
-      flex-wrap: wrap;
-      max-width: 1150px;
-      margin: 0 auto;
+    .section h2 {
+      font-size: 24px;
+      margin: 0 20px 15px;
+      padding-bottom: 5px;
+      color: #333;
+      position: relative;
+      text-indent: 10px;
     }
 
-    #header img {
-      width: 150px;
-      border-radius: 10px;
-      flex-shrink: 0;
-      margin-left: 40px;
+    .section h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #bfa8ff;
     }
 
-    #header div {
-      flex: 1;
-      min-width: 250px;
+    .section p, .section li {
+      font-family: 'Mulish', sans-serif;
+      font-size: 15px;
+      color: #555;
+      text-align: justify;
+      margin: 5px 20px;
     }
 
-    /* Responsive layout for smaller screens */
-    @media (max-width: 600px) {
-      #header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+  .section p a, .section li a {
+    color: #8f68ff;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
 
-      #header img {
-        margin-bottom: 15px;
-      }
+  .section p a:hover, .section li a:hover {
+    color: #6f4cff;
+  }
 
-      #header div {
-        width: 100%;
-      }
+
+    .album-photo {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 0;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .album-about {
+      width: 300px;
+      font-family: 'Mulish', sans-serif;
+      font-size: 15px;
+      color: #555;
+      text-align: center;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <header class="header">
+      <div class="header-icons">
+        <!-- <a href="yewonjeon.pdf" title="CV"><strong>CV</strong></a> -->
+        <!-- <a href="." title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a> -->
+        <a href="https://github.com/yyonyy" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/yyonyy" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="profile-pic-outer">
+        <img class="profile-pic" src="IMG_4511.jpg" alt="Profile Photo">
+      </div>
+      <h1>Yewon Jeon</h1>
+      <p class="subtitle">B.S. in Mechanical Engineering @ Sungkyunkwan University<br>yw8431@g.skku.edu</p>
+    </header>
 
-<header id="header">
-  <img src="IMG_4511.jpg" alt="Profile Photo">
-  <div>
-    <h1>Yewon Jeon</h1>
-    <p>B.S. in Mechanical Engineering @ Sungkyunkwan University (Suwon)</p>
-    <hr>
-    <div>
-      <strong>CONTACT</strong><br>
-      E-mail: yw8431@g.skku.edu<br>
-      GitHub: <a href="https://github.com/yyonyy" target="_blank" rel="noopener noreferrer">My Repository</a><br>
-      LinkedIn: <a href="https://www.linkedin.com/in/yyonyy" target="_blank" rel="noopener noreferrer">Linkedin Profile</a><br>
-      Location: Sungkyunkwan University (Suwon), Republic of Korea
+    <div class="content">
+      <section class="section">
+        <h2>About me</h2>
+        <p>Currently a senior undergraduate student majoring in Mechanical Engineering, with a self-designed interdisciplinary track in Future Mobility. Since Spring 2023, I have been a research intern at the Laboratory of Artificial Intelligence and Robotics (LAIR), advised by Prof. Hyeonwoo Yu.
+
+</p>
+      </section>
+
+      <section class="section">
+        <h2>Research Interest</h2>
+        <ul>
+          <li>SLAM / Place Recognition</li>
+          <li>Autonomous Driving</li>
+          <li>Spatial Reasoning</li>
+          <li>Planning</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Education</h2>
+        <p>[2021.03 - Present] : B.S. in Mechanical Engineering (Major1) & Future Mobility (Major2) @ SKKU</p>
+      </section>
+
+      <section class="section">
+        <h2>Work Experience & Teaching Assistant</h2>
+        <p>[2023.03 - 2024.12] Project Leader, Autonomous Driving Team @ HEVEN Academic Club<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;• Team management and architecture design for autonomous vehicle projects</p>
+
+        <p>[2024.06 - 2024.12] 문제해결과 알고리즘 TA (Problem Solving and Algorithms TA)</p>
+        <p>[2024.07 - 2024.08] 공군 AI 교육 TA (Air Force AI Education TA)</p>
+        <p>[2024.12 - 2025.02] Winter Vacation Intern @ <a href="http://www.wise-automotive.com/default/" target="_blank">WISE Automotive</a><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;• 차량의 안전 운행을 위한 딥러닝 기반 ADAS 구현 실무<br> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Deep learning-based ADAS implementation for vehicle safety)</p>
+     </section>
+
+
+
+      <section class="section">
+        <h2>Projects</h2>
+        <p>[23.03.01 - 23.11.30] 드론 시뮬레이션 환경 구축(Unreal Engine)을 통한 드론 레이싱 개발 @<a href="https://rise.skku.edu/" target="_blank">RISE LAB, SKKU</a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;(Drone racing development using Unreal Engine-based drone simulation environment)</p>
+
+      <p>[23.06.01 - 23.10.14] 다양한 로봇의 자율주행을 위한 실내 정밀 지도 생성 및 데이터 공유 기술 @<a href="https://clabil.com/" target="_blank">CLABiL</a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;(Indoor precision mapping and data sharing technology for autonomous driving of various robots)</p>
+
+      <p>[23.08.24 - 23.10.24] <a href="https://www.morai.ai/ko/svadc/" target="_blank">서울 버추얼 자율주행 챌린지</a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;(Seoul Virtual Autonomous Driving Challenge)</p>
+
+      <p>[23.12.18 - 24.01.24] RL 기반 Q-learning을 활용한 자율자동차의 Path Planning<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;(Path Planning of autonomous vehicles using RL-based Q-learning)</p>
+
+      <p>[23.06.01 - 24.11.10] <a href="https://carsa.kr/" target="_blank">대학생 창작 모빌리티 경진대회 무인 모빌리티 부문</a> @ 자동차 안전 연구원 K-City<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• Team member in 2023<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• Team leader in 2024<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;(Student Creative Mobility Competition, Unmanned Mobility division)</p>
+
+      <p>[24.06.01 - 24.11.23] 제 7회 성균관대학교 자율주행 해커톤 개최 <a href="https://marked-scorpio-7ac.notion.site/7-13cb26b70af8806cac89ffdcd99cd390/" target="_blank">(규정집)</a> @ 성균관대학교  Learning Factory<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;(7th Sungkyunkwan University Autonomous Driving Hackathon)</p>
+
+      <p>[24.06.01 - 24.12.01] 동적인 환경에서의 자율주행을 위한 강건한 위치획득 알고리즘 구현<br>
+     &nbsp;&nbsp;&nbsp;&nbsp; (Implementation of robust localization algorithm for autonomous driving in dynamic environments)</p>
+
+      <p>[25.05.16 - 25.05.17] 2025 자율주행 로봇 레이스 1차 대회 @ ChungBuk University C-Track<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;(2025 Autonomous Robot Race Round 1 @ ChungBuk University C-Track)</p>
+
+        
+
+        
+        <!-- <p>- [23.03.01 - 23.11.30] 드론 시뮬레이션 환경 구축(Unreal Engine)을 통한 드론 레이싱 개발 @<a href="https://rise.skku.edu/" target="_blank">RISE LAB, SKKU</a></p>
+        <p>- [23.06.01 - 23.10.14] 다양한 로봇의 자율주행을 위한 실내 정밀 지도 생성 및 데이터 공유 기술 @<a href="https://clabil.com/" target="_blank">CLABiL</a></p>
+        <p>- [23.08.24 - 23.10.24] <a href="https://www.morai.ai/ko/svadc/" target="_blank">서울 버추얼 자율주행 챌린지</a></p>
+        <p>- [23.12.18 - 24.01.24] RL 기반 Q-learning을 활용한 자율자동차의 Path Planning</p>
+        <p>- [23.06.01 - 24.11.10] 대학생 창작 모빌리티 경진대회 무인 모빌리티 부문<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;• Team member in 2023<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;• Team leader in 2024</p>
+        <p>- [24.06.01 - 24.11.23] 제 7회 성균관대학교 자율주행 해커톤 개최 <a href="https://marked-scorpio-7ac.notion.site/7-13cb26b70af8806cac89ffdcd99cd390/" target="_blank">(규정집)</a></p>
+        <p>- [24.06.01 - 24.12.01] 동적인 환경에서의 자율주행을 위한 강건한 위치획득 알고리즘 구현</p>
+        <p>- [25.05.16 - 25.05.17] 2025 자율주행 로봇 레이스 1차 대회 @ ChungBuk University C-Track</p> -->
+      </section>
+
+      <section class="section">
+        <h2>Awards</h2>
+        <p>[23.08.25] 제6회 국민대학교 자율주행 경진대회 3등 입상<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;(3rd Place in the 6th Kookmin University Autonomous Driving Competition)</p>
+
+        <p>[23.10.14] 2023 창의혁신 DNA 산학협력 팀 프로젝트 최종 발표회 공학혁신상 수상<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;(Engineering Innovation Award at the 2023 Creative Innovation DNA Industry-Academic Cooperation Team Project Final Presentation)</p>
+
+        <p>[23.11.24] 샤크(SHARK) 자율주행 대회 우수상 수상<br>
+       &nbsp;&nbsp;&nbsp;&nbsp; (Excellence Award at the SHARK Autonomous Driving Competition)</p>
+
+        <!-- <p>- [23.08.25] 제6회 국민대학교 자율주행 경진대회 3등 입상</p>
+        <p>- [23.10.14] 2023 창의혁신 DNA 산학협력 팀 프로젝트 최종 발표회 공학혁신상 수상</p>
+        <p>- [23.11.24] 샤크(SHARK) 자율주행 대회 우수상 수상</p> -->
+      </section>
+
+      <section class="section">
+        <h2>Skills</h2>
+        <p> Programming & Frameworks: Python, C++, C, Pandas, CUDA</p>
+        <p> Computer Vision & 3D Processing: OpenCV, Open3D, CloudCompare</p>
+        <p> Software Development & Environment Management: Docker, Git, Conda</p>
+        <p> Robotics & Embedded Systems: ROS1 / ROS2, Arduino, Embedded Systems</p>
+        <p> Design Tools: Autodesk Inventor, Fusion 360</p>
+      </section>
     </div>
   </div>
-</header>
-
-<main>
-  <article>
-    <section>
-      <h2>About me</h2>
-          Currently a senior undergraduate student majoring in Mechanical Engineering, with a self-designed interdisciplinary major in Future Mobility.<br>
-          Research intern at the Laboratory of Artificial Intelligence and Robotics (LAIR), advised by Prof. Hyeonwoo Yu.
-
-    </section>
-
-    <section>
-      <h2>Research Interest</h2>
-        <ul>
-            <li>SLAM / Place Recognition</li>
-            <li>Autonomous Driving</li>
-            <li>Computer Vision</li>
-            <li>Planning</li>
-        </ul>
-    </section>
-
-    <!-- <section>
-      <h2>CONTACT</h2>
-      E-mail: yw8431@g.skku.edu<br>
-      GitHub: https://github.com/yyonyy (<a href="https://github.com/yyonyy" target="_blank">yyonyy</a>)<br>
-      LinkedIn: <a href="www.linkedin.com/in/yyonyy" target="_blank">linkedin profile</a><br>
-      Location: Sungkyunkwan University(Suwon), Republic of Korea
-
-    </section> -->
-
-    <section>
-      <h2>Education</h2>
-       2021.03 - Present : B.S. in Mechanical Engineering (Major1) & Future Mobility (Major2) in Sungkyunkwan University (SKKU)
-    </section>
-
-    <section>
-      <h2>Work Experience & Teaching Assistant</h2>
-      - [2024.06 - 2024.12] 문제해결과 알고리즘 TA<br>
-      - [2024.07 - 2024.08] 공군 AI 교육 TA<br>
-      - [2024.12 - 2025.02] Winter Vacation Intern @ <a href="http://www.wise-automotive.com/default/" target="_blank">WISE Automotive</a><br>
-        <span style="margin-left: 40px;">• 차량의 안전 운행을 위한 딥러닝 기반 ADAS 구현 실무</span>
-
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      - [23.03.01 - 23.11.30] 드론 시뮬레이션 환경 구축(Unreal Engine)을 통한 드론 레이싱 개발 @<a href="https://rise.skku.edu/" target="_blank">RISE LAB, SKKU</a>, 이화여자대학교 시뮬레이션 융복합 콘텐츠 연구센터<br>
-      - [23.06.01 - 23.10.14] 다양한 로봇의 자율주행을 위한 실내 정밀 지도 생성 및 데이터 공유 기술 @<a href="https://clabil.com/" target="_blank">CLABiL</a>, 산학협력프로젝트<br>
-      - [23.08.24 - 23.10.24] <a href="https://www.morai.ai/ko/svadc/" target="_blank">서울 버추얼 자율주행 챌린지</a><br>
-      - [23.12.18 - 24.01.24] RL 기반 Q-learning을 활용한 자율자동차의 Path Planning (Advisor : Eunbyung Park) <br>
-      - [23.06.01 - 24.11.10] 대학생 창작 모빌리티 경진대회 무인 모빌리티 부문<br>
-            <div style="margin-left: 40px;">
-                • Team member in 2023<br>
-                • Team leader in 2024<br>
-            </div>
-      - [24.06.01 - 24.11.23] 제 7회 성균관대학교 자율주행 해커톤 개최 <a href="https://marked-scorpio-7ac.notion.site/7-13cb26b70af8806cac89ffdcd99cd390/" target="_blank">(규정집)</a><br>
-      - [24.06.01 - 24.12.01] 동적인 환경에서의 자율주행을 위한 강건한 위치획득 알고리즘 구현<br>
-      - [25.05.16 - 25.05.17] 2025 자율주행 로봇 레이스 1차 대회 @ ChungBuk University C-Track
-
-    </section>
-
-    <section>
-      <h2>Awards</h2>
-      - [23.08.25 - 23.08.25] 제6회 국민대학교 자율주행 경진대회 3등 입상<br>
-      - [23.10.14 - 23.10.14] 2023 창의혁신 DNA 산학협력 팀 프로젝트 최종 발표회 공학혁신상 수상<br>
-      - [23.11.24 - 23.11.24] 샤크(SHARK) 자율주행 대회 우수상 수상<br>
-    </section>
-
-    <section>
-      <h2>SKILLS</h2>
-      - Python<br>
-      - C/C++<br>
-      - ROS1/ ROS2
-    </section>
-  </article>
-</main>
-
 </body>
 </html>
