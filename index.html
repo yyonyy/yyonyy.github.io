@@ -40,18 +40,18 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-.profile-pic-outer {
-  width: 150px;
-  margin: 0 auto 10px;
-  text-align: center;
-}
+    .profile-pic-outer {
+      width: 150px;
+      margin: 0 auto 10px;
+      text-align: center;
+    }
 
-.profile-pic {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    .profile-pic {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
     h1 {
       font-size: 36px;
@@ -70,23 +70,24 @@
       position: absolute;
       top: 20px;
       right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
 
     .header-icons a {
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 40px;
       height: 40px;
-      line-height: 40px;
-      text-align: center;
       border-radius: 50%;
       background-color: #bfa8ff;
       color: #fff;
-      margin-left: 10px;
       font-size: 18px;
       transition: background-color 0.3s ease;
       text-decoration: none;
     }
-
     .header-icons a:hover {
       background-color: #a890ff;
     }
@@ -126,18 +127,17 @@
       margin: 5px 20px;
     }
 
-  .section p a, .section li a {
-    color: #8f68ff;
-    text-decoration: underline;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
+    .section p a, .section li a {
+      color: #8f68ff;
+      text-decoration: underline;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
 
-  .section p a:hover, .section li a:hover {
-    color: #6f4cff;
-  }
-
-
+    .section p a:hover, .section li a:hover {
+      color: #6f4cff;
+    }
+  
     .album-photo {
       width: 300px;
       height: 300px;
@@ -153,12 +153,66 @@
       color: #555;
       text-align: center;
     }
+
+      @media (max-width: 500px) {
+    .container {
+      margin: 10px;
+      padding: 15px;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    .profile-pic-outer {
+      width: 120px;
+    }
+
+    .header-icons {
+      top: 10px;
+      right: 10px;
+      gap: 8px;
+    }
+
+    .header-icons a {
+      width: 36px;
+      height: 36px;
+      font-size: 16px;
+    }
+
+    .section h2 {
+      font-size: 20px;
+    }
+
+    .section p, .section li {
+      font-size: 14px;
+      margin: 5px 15px;
+    }
+
+    .album-photo, .album-about {
+      width: 100%;
+      height: auto;
+    }
+  }
   </style>
 </head>
 <body>
   <div class="container">
     <header class="header">
       <div class="header-icons">
+        
+        <a href="#" title="Email" id="email-copy">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <script>
+          document.getElementById('email-copy').addEventListener('click', function(e) {
+            e.preventDefault();
+            navigator.clipboard.writeText('yw8431@g.skku.edu').then(() => {
+              alert('Copied: yw8431@g.skku.edu');
+            });
+          });
+        </script>
+
         <!-- <a href="yewonjeon.pdf" title="CV"><strong>CV</strong></a> -->
         <!-- <a href="." title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a> -->
         <a href="https://github.com/yyonyy" title="GitHub"><i class="fab fa-github"></i></a>
@@ -168,7 +222,8 @@
         <img class="profile-pic" src="IMG_4511.jpg" alt="Profile Photo">
       </div>
       <h1>Yewon Jeon</h1>
-      <p class="subtitle">B.S. in Mechanical Engineering @ Sungkyunkwan University<br>yw8431@g.skku.edu</p>
+      <p class="subtitle">B.S. in Mechanical Engineering @ Sungkyunkwan University<br></p>
+      <small>yw8431@skku.edu<small></small>
     </header>
 
     <div class="content">
